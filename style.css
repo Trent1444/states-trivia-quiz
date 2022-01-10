@@ -1,2 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+}
+
+.topBar {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#timeLeft {
+  margin-top: 5rem;
+  align-items: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+#timeLeftText {
+  margin: 0;
+}
+.mainContent {
+  /* margin-top: 7rem; */
+}
+
+.mainContent button {
+  justify-content: center;
+}
+
+#startQuiz {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: hsl(180, 100%, 50%);
+}
+
+#startQuiz:hover {
+  background-color: hsl(155, 100%, 50%);
+  transform: translateY(-3px);
 }

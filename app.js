@@ -16,7 +16,7 @@ function startTimer() {
   if (timeLeft === 0) {
     timeLeft = 20;
     timerId = setInterval(countDown, 1000);
-  } else if (timeLeft < 20) alert("The quiz has already been started");
+  } else if (timeLeft <= 20) alert("The quiz has already been started");
   else {
     timeLeft = 20;
     timerId = setInterval(countDown, 1000);
