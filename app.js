@@ -1,4 +1,6 @@
-let timeLeft = 100;
+let timeLeft;
+let timerId;
+
 function countDown() {
   if (timeLeft === 0) clearInterval(timerId);
   else timeLeft--;
@@ -6,5 +8,9 @@ function countDown() {
 }
 
 function startTimer() {
-  const timerId = setInterval(countDown, 1000);
+  if (timeLeft <= 200) alert("The quiz has already been started");
+  else {
+    timeLeft = 200;
+    timerId = setInterval(countDown, 1000);
+  }
 }
