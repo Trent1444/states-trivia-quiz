@@ -1,9 +1,10 @@
-let timeLeft = 4;
-
+let timeLeft = 100;
 function countDown() {
-  console.log(timeLeft);
   if (timeLeft === 0) clearInterval(timerId);
   else timeLeft--;
+  document.querySelector("#timeLeft").innerText = timeLeft;
 }
 
-const timerId = setInterval(countDown, 1000);
+function startTimer() {
+  const timerId = setInterval(countDown, 1000);
+}
