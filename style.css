@@ -14,10 +14,13 @@ nav {
 }
 .navButton {
   background-color: hsl(155, 100%, 50%);
+  font-size: 2rem;
   align-items: center;
   justify-content: center;
   padding-left: 15%;
   padding-right: 15%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   margin-left: 2rem;
   margin-right: 2rem;
 }
