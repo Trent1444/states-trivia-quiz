@@ -9,10 +9,20 @@
   </head>
   <body>
     <nav>
-      <button class="navButton">Home</button>
+      <button class="navButton" onclick="document.location='index.html'">
+        Home
+      </button>
       <button class="navButton" onclick="document.location='quiz.html'">
         Quiz!
       </button>
     </nav>
+    <div class="topBar">
+      <h2 id="timeLeftText">Time Left:</h2>
+      <h2 id="timeLeft">20</h2>
+    </div>
+    <div class="mainContent">
+      <button id="startQuiz" onclick="startTimer()">Start Quiz!</button>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>

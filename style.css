@@ -4,8 +4,24 @@
   box-sizing: border-box;
 }
 
+nav {
+  margin: 2rem;
+}
+
+.navButton:hover {
+  background-color: hsl(180, 100%, 50%);
+  transform: translateY(-3px);
+}
+.navButton {
+  background-color: hsl(155, 100%, 50%);
+  align-items: center;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 body {
-  margin: 0;
 }
 
 .topBar {
@@ -23,9 +39,6 @@ body {
 
 #timeLeftText {
   margin: 0;
-}
-.mainContent {
-  /* margin-top: 7rem; */
 }
 
 .mainContent button {
